@@ -23,29 +23,58 @@
             <h1 class="form__title section-title">Подбор программы</h1>
             <p class="form__description inner-title">Заполните анкету, и мы подберем программу питания для вашего кота</p>
             <fieldset class="form__fieldset form__fieldset--main">
-                <label class="form__field">Имя:* <input id="pet_name" type="text" name="pet_name"></label>
-                <label class="form__field">Вес (кг):* <input id="pet_name" type="number" name="pet_weight"></label>
-                <label class="form__field">Возраст (лет):* <input id="pet_name" type="number" name="pet_age"></label>
+                <label class="form__field">Имя:* <input class="form__input" id="pet_name" type="text" name="pet_name"></label>
+                <label class="form__field">Вес (кг):* <input class="form__input" id="pet_name" type="number" name="pet_weight"></label>
+                <label class="form__field">Возраст (лет):* <input class="form__input" id="pet_name" type="number" name="pet_age"></label>
             </fieldset>
             <fieldset class="form__fieldset form__fieldset--submain">
-                <label class="form__field"><input type="radio" name="purpose" value="low-weight"checked>Похудение</label>
-                <label class="form__field"><input type="radio" name="purpose" value="gain-weight">Набор массы</label>
-                <label class="form__field"><input type="radio" name="purpose" value="dont-know">Не знаю, нужен совет</label>                
+                <label class="form__field">
+                    <input class="form__input" type="radio" name="purpose" value="low-weight"checked>Похудение
+                    <span class="form__control-mark"></span>
+                </label>
+                <label class="form__field">
+                    <input class="form__input" type="radio" name="purpose" value="gain-weight">Набор массы
+                    <span class="form__control-mark"></span>
+                </label>
+                <label class="form__field">
+                    <input class="form__input" type="radio" name="purpose" value="dont-know">Не знаю, нужен совет
+                    <span class="form__control-mark"></span>
+                </label>                
             </fieldset>
             <fieldset class="form__fieldset form__fieldset--bordered">
                 <legend class="form__subtitle">Контактные данные (владельца кота)</legend>
-                
+                <label class="form__field">E-mail:* <input class="form__input" id="email" type="email" name="E-mail"></label>
+                <label class="form__field">Телефон:* <input class="form__input" id="phone" type="tel" name="phone"></label>
             </fieldset>
             <fieldset>
-                <legend >Выберите прожарку</legend>
+                <legend class="form__subtitle">Комментарий</legend>
+                <textarea class="form__textarea" rows="10" cols="45" name="comment"></textarea>
                 
             </fieldset>
-            <fieldset>
-                <legend>Выберите прожарку</legend>
-                
+            <fieldset class="form__fieldset form__fieldset--bordered">
+                <legend>Дополнительно</legend>
+                    <label class="form__field">
+                        <input class="form__input" type="checkbox" name="shugar" checked>
+                                Сахарозаменитель
+                        <span class="form__control-mark"></span>
+                    </label>
+                    <label class="form__field">
+                        <input class="form__input" type="checkbox" name="water" checked>
+                                Вода
+                        <span class="form__control-mark"></span>
+                    </label>
+                    <label class="form__field">
+                        <input class="form__input" type="checkbox" name="milk" checked>
+                                Молоко
+                        <span class="form__control-mark"></span>
+                    </label>
+                    <label class="form__field">
+                        <input class="form__input" type="checkbox" name="vitamins" checked>
+                                Витамины
+                        <span class="form__control-mark"></span>
+                    </label>
             </fieldset>
-
-
+            <button class="button form__button" type="submit">Применить</button>
         </form>
 
 
