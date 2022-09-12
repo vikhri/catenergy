@@ -1,0 +1,27 @@
+// Начните писать стили здесь
+body { background: rgb(78, 2, 2); }
+
+
+@use "/source/sass/blocks/additionals.scss";
+@use "/source/sass/blocks/button.scss";
+@use "/source/sass/blocks/card.scss";
+@use "/source/sass/blocks/cat-scroll.scss";
+@use "/source/sass/blocks/catalog.scss";
+@use "/source/sass/blocks/example.scss";
+@use "/source/sass/blocks/facts.scss";
+@use "/source/sass/blocks/features.scss";
+@use "/source/sass/blocks/form.scss";
+@use "/source/sass/blocks/logo.scss";
+@use "/source/sass/blocks/main-nav.scss";
+@use "/source/sass/blocks/menu.scss";
+@use "/source/sass/blocks/page-footer.scss";
+@use "/source/sass/blocks/page-header.scss";
+@use "/source/sass/blocks/partnership.scss";
+@use "/source/sass/blocks/programs.scss";
+@use "/source/sass/blocks/promo.scss";
+@use "/source/sass/blocks/properties.scss";
+@use "/source/sass/blocks/show-more.scss";
+@use "/source/sass/blocks/socials.scss";
+@use "/source/sass/blocks/upsale.scss";
+@use "/source/sass/helpers/container.scss";
+@use "/source/sass/helpers/normilize.scss";

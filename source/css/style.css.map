@@ -1,0 +1,1 @@
+{"version":3,"sources":["style.scss","style.css"],"names":[],"mappings":"AACA;EAAO,mBAAA;ACCP","file":"style.css","sourcesContent":["// Начните писать стили здесь\r\nbody { background: rgb(78, 2, 2); }","body {\n  background: #4e0202;\n}"]}
