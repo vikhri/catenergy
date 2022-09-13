@@ -1,27 +1,38 @@
 // Начните писать стили здесь
-body { background: rgb(78, 2, 2); }
+
+@use "./blocks/additionals.scss";
+@use "./blocks/button.scss";
+@use "./blocks/card.scss";
+@use "./blocks/cat-scroll.scss";
+@use "./blocks/catalog.scss";
+@use "./blocks/example.scss";
+@use "./blocks/facts.scss";
+@use "./blocks/features.scss";
+@use "./blocks/form.scss";
+@use "./blocks/logo.scss";
+@use "./blocks/main-nav.scss";
+@use "./blocks/menu.scss";
+@use "./blocks/page-footer.scss";
+@use "./blocks/page-header.scss";
+@use "./blocks/partnership.scss";
+@use "./blocks/programs.scss";
+@use "./blocks/promo.scss";
+@use "./blocks/properties.scss";
+@use "./blocks/show-more.scss";
+@use "./blocks/socials.scss";
+@use "./blocks/upsale.scss";
+@use "./helpers/container.scss";
+@use "./helpers/normilize.scss";
+@use "./helpers/visually-hidden.scss";
 
 
-@use "/source/sass/blocks/additionals.scss";
-@use "/source/sass/blocks/button.scss";
-@use "/source/sass/blocks/card.scss";
-@use "/source/sass/blocks/cat-scroll.scss";
-@use "/source/sass/blocks/catalog.scss";
-@use "/source/sass/blocks/example.scss";
-@use "/source/sass/blocks/facts.scss";
-@use "/source/sass/blocks/features.scss";
-@use "/source/sass/blocks/form.scss";
-@use "/source/sass/blocks/logo.scss";
-@use "/source/sass/blocks/main-nav.scss";
-@use "/source/sass/blocks/menu.scss";
-@use "/source/sass/blocks/page-footer.scss";
-@use "/source/sass/blocks/page-header.scss";
-@use "/source/sass/blocks/partnership.scss";
-@use "/source/sass/blocks/programs.scss";
-@use "/source/sass/blocks/promo.scss";
-@use "/source/sass/blocks/properties.scss";
-@use "/source/sass/blocks/show-more.scss";
-@use "/source/sass/blocks/socials.scss";
-@use "/source/sass/blocks/upsale.scss";
-@use "/source/sass/helpers/container.scss";
-@use "/source/sass/helpers/normilize.scss";
+html {
+    background-color: #f4f4f4;
+}
+
+body { 
+    background-color: #FFF; 
+    width: 320px;
+    margin: 0 auto;
+}
+

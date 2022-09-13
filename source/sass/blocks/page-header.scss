@@ -1,0 +1,28 @@
+.page-header {
+    display: flex;
+    width: 320px;
+    min-height: 55px;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content: space-between;
+     
+}
+
+.page-header__logo {
+    margin: 0;
+    height: 38px;
+}
+
+.page-header__logo--text {
+    display: flex;
+    align-items: center;
+}
+
+.page-header__nav {
+    display: block;
+    display: flex;
+    align-items: center;
+}
+
+
