@@ -1,3 +1,22 @@
+@font-face {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/fonts/oswaldregular.woff2") format("woff2"), url("../ fonts/fonts/oswaldregular.woff") format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  src: url("/../fonts/fonts/oswaldregular.woff2") format("woff2"), url("/../ fonts/fonts/oswaldregular.woff") format("woff");
+  font-display: swap;
+}
+.section-title {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+}
+
 .button--reset {
   border: none;
   margin: 0;
@@ -67,12 +86,17 @@
 }
 
 .promo {
-  background-color: #68B738;
   display: flex;
+  background-blend-mode: multiply;
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("/../img/index-background.png");
+  background-position: top;
+  background-repeat: no-repeat;
 }
 
-.programs__title {
+.promo__title {
   display: block;
+  font-size: 36px;
+  line-height: 36px;
 }
 
 .container {
@@ -434,6 +458,20 @@ template {
   overflow: hidden;
 }
 
+@font-face {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/./fonts/fonts/oswaldregular.woff2") format("woff2"), url("/./fonts/fonts/oswaldregular.woff") format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  src: url("/./fonts/fonts/oswaldregular.woff2") format("woff2"), url("/./fonts/fonts/oswaldregular.woff") format("woff");
+  font-display: swap;
+}
 html {
   background-color: #f4f4f4;
 }

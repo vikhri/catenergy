@@ -1,5 +1,5 @@
 // Начните писать стили здесь
-
+@use "./helpers/fonts.scss";
 @use "./blocks/additionals.scss";
 @use "./blocks/button.scss";
 @use "./blocks/card.scss";
@@ -24,6 +24,28 @@
 @use "./helpers/container.scss";
 @use "./helpers/normilize.scss";
 @use "./helpers/visually-hidden.scss";
+
+
+//FONTS
+
+@font-face {
+    font-family: "Oswald";
+    font-style: normal;
+    font-weight: 400;
+    src: url("/./fonts/fonts/oswaldregular.woff2") format("woff2"),
+    url("/./fonts/fonts/oswaldregular.woff") format("woff");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Oswald";
+    font-style: normal;
+    font-weight: 500;
+    src: url("/./fonts/fonts/oswaldregular.woff2") format("woff2"),
+    url("/./fonts/fonts/oswaldregular.woff") format("woff");
+    font-display: swap;
+}
+
 
 
 html {
