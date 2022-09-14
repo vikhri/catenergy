@@ -1,3 +1,12 @@
+$basic-green: #68B738;
+
+@mixin button-text {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    size: 14px;
+    line-height: 14px;
+}
+
 .button--reset {
 
     border: none;
@@ -24,5 +33,20 @@
 }
 
 
+.button {
+    align-items: center;
+    height: 40px;
+    min-width: 100%;
+    padding: 12px 44px 8px 44px;
+    background-color: $basic-green;
+    @include button-text();
+    text-decoration: none;
+    color: white;
+    display: block;
+    box-sizing: border-box;
+    text-align: center;
+    
+    
 
+}
 

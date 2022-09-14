@@ -2,8 +2,8 @@
     font-family: "Oswald";
     font-style: normal;
     font-weight: 400;
-    src: url("../fonts/fonts/oswaldregular.woff2") format("woff2"),
-    url("../ fonts/fonts/oswaldregular.woff") format("woff");
+    src: url("/../fonts/oswaldregular.woff2") format("woff2"),
+    url("/../fonts/oswaldregular.woff") format("woff");
     font-display: swap;
 }
 
@@ -11,21 +11,28 @@
     font-family: "Oswald";
     font-style: normal;
     font-weight: 500;
-    src: url("/../fonts/fonts/oswaldregular.woff2") format("woff2"),
-    url("/../ fonts/fonts/oswaldregular.woff") format("woff");
+    src: url("/../fonts/oswaldregular.woff2") format("woff2"),
+    url("/../fonts/oswaldregular.woff") format("woff");
     font-display: swap;
 }
 
 
-@mixin title-font {
+@mixin main-font {
     font-family: 'Oswald', sans-serif;
 }
 
 
 .section-title {
 
-    @include title-font();
+    @include main-font();
     font-weight: 400;
     
+}
+
+.section-strong-text {
+    @include main-font();
+    font-weight: 400;
+    size: 14px;
+    line-height: 14px;
 
 }

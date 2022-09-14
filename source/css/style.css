@@ -2,19 +2,26 @@
   font-family: "Oswald";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/fonts/oswaldregular.woff2") format("woff2"), url("../ fonts/fonts/oswaldregular.woff") format("woff");
+  src: url("/../fonts/oswaldregular.woff2") format("woff2"), url("/../fonts/oswaldregular.woff") format("woff");
   font-display: swap;
 }
 @font-face {
   font-family: "Oswald";
   font-style: normal;
   font-weight: 500;
-  src: url("/../fonts/fonts/oswaldregular.woff2") format("woff2"), url("/../ fonts/fonts/oswaldregular.woff") format("woff");
+  src: url("/../fonts/oswaldregular.woff2") format("woff2"), url("/../fonts/oswaldregular.woff") format("woff");
   font-display: swap;
 }
 .section-title {
   font-family: "Oswald", sans-serif;
   font-weight: 400;
+}
+
+.section-strong-text {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  size: 14px;
+  line-height: 14px;
 }
 
 .button--reset {
@@ -34,6 +41,23 @@
   -moz-osx-font-smoothing: inherit;
   /* Corrects inability to style clickable `input` types in iOS */
   -webkit-appearance: none;
+}
+
+.button {
+  align-items: center;
+  height: 40px;
+  min-width: 100%;
+  padding: 12px 44px 8px 44px;
+  background-color: #68B738;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  size: 14px;
+  line-height: 14px;
+  text-decoration: none;
+  color: white;
+  display: block;
+  box-sizing: border-box;
+  text-align: center;
 }
 
 .logo__cat {
@@ -87,16 +111,26 @@
 
 .promo {
   display: flex;
+  color: white;
   background-blend-mode: multiply;
-  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("/../img/index-background.png");
+  background-image: url("/../img/index-background.png");
   background-position: top;
   background-repeat: no-repeat;
+  position: relative;
 }
 
 .promo__title {
   display: block;
   font-size: 36px;
   line-height: 36px;
+  z-index: 2;
+}
+
+.promo__description {
+  display: block;
+  font-size: 14px;
+  line-height: 14px;
+  z-index: 2;
 }
 
 .container {

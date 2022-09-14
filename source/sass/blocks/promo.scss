@@ -2,7 +2,7 @@ $basic-green: #68B738;
 
 @mixin background-image-promo {
     background-blend-mode: multiply;
-    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("/../img/index-background.png");
+    background-image: url("/../img/index-background.png");
     background-position: top;
     background-repeat: no-repeat;
     
@@ -11,11 +11,33 @@ $basic-green: #68B738;
 
 .promo {
     display: flex;
+    color: white;
     @include background-image-promo();
+    position: relative;
+    
 }
+
+//   .promo::before {
+//     content: '';
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     right: 0;
+//     bottom: 0;
+//     background-color:rgba(104, 183, 56, 0.85);  
+//     z-index: 0;
+//   }
 
 .promo__title {
     display: block;
     font-size: 36px;
     line-height: 36px;
+    z-index: 2;
+}
+
+.promo__description {
+    display: block;
+    font-size: 14px;
+    line-height: 14px;
+    z-index: 2;
 }
