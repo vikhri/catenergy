@@ -36,7 +36,7 @@ $basic-green: #68B738;
 .button {
     align-items: center;
     height: 40px;
-    min-width: 100%;
+    min-width: 160px;
     padding: 12px 44px 8px 44px;
     background-color: $basic-green;
     @include button-text();
@@ -45,8 +45,6 @@ $basic-green: #68B738;
     display: block;
     box-sizing: border-box;
     text-align: center;
-    
-    
 
 }
 
