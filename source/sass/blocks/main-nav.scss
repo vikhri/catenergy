@@ -1,15 +1,11 @@
 .main-nav {
-    width: 24px;
-    height: 37px;
-    display: block;
+    position: relative;
 }
 
-.main-nav__toggle {
-    background-image: url("../img/toggler-mobile.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 25px;
-    height: 18px;
-    display: block;
-    
+.main-nav__menu {
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    z-index: 2;
+
 }

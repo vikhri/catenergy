@@ -19,10 +19,19 @@
     align-items: center;
 }
 
-.page-header__nav {
-    display: block;
+.page-header__toggle {
     display: flex;
     align-items: center;
+    width: 24px;
+    height: 37px;
+    margin-top: 8px;
 }
 
 
+.page-header__toggle--closed {
+    background-image: url("../img/toggler-mobile.png");
+    background-repeat: no-repeat;
+    width: 25px;
+    height: 18px;
+
+}

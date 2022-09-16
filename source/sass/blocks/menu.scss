@@ -1,0 +1,27 @@
+@mixin menu-font {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-bottom: 1px solid #E6E6E6;
+}
+
+.menu__item {
+    @include menu-font();
+    padding-top: 22px;
+    padding-bottom: 22px;
+    border-top: 1px solid #E6E6E6;
+    
+}
+
+

@@ -1,0 +1,27 @@
+.cat-scroll {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 13px;
+}
+
+.cat-scroll__bar {
+    display: flex;
+    background-color: white;
+    width: 85px;
+    height: 14px;
+    border-radius: 6px;
+    border: 1px solid #CDCDCD;
+    align-items: center;
+    padding-left: 4px;
+    padding-right: 4px;    
+}
+
+.cat-scroll__value {
+    display: block;
+    background-color: #68B738;
+    border-radius: 6px;
+    width: 50%;
+    height: 6px;
+
+}

@@ -1,0 +1,32 @@
+.partnership {
+    display: block;
+    padding-top: 26px;
+}
+
+.partnership__text-block {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 26px;
+}
+
+h2, .partnership__title {
+    display: block;
+    padding:0;
+    margin: 0;
+    font-size: 16px;
+}
+
+.partnership__address {
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+.partnership__map {
+    display: block;
+    background-image: url("/../img/location.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 362px;
+    width: 100%;
+}

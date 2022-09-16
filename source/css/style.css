@@ -22,6 +22,7 @@
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
   line-height: 18px;
+  color: #444444;
 }
 
 .section-strong-text {
@@ -29,6 +30,14 @@
   font-weight: 400;
   size: 14px;
   line-height: 14px;
+}
+
+.inner-title {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  size: 14px;
+  line-height: 20px;
 }
 
 .button--reset {
@@ -67,9 +76,37 @@
   text-align: center;
 }
 
+.cat-scroll {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 13px;
+}
+
+.cat-scroll__bar {
+  display: flex;
+  background-color: white;
+  width: 85px;
+  height: 14px;
+  border-radius: 6px;
+  border: 1px solid #CDCDCD;
+  align-items: center;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.cat-scroll__value {
+  display: block;
+  background-color: #68B738;
+  border-radius: 6px;
+  width: 50%;
+  height: 6px;
+}
+
 .example {
   background-color: #EAEAEA;
   padding-top: 25px;
+  padding-bottom: 40px;
 }
 
 h2, .example__title {
@@ -78,19 +115,32 @@ h2, .example__title {
   padding-bottom: 40px;
 }
 
+.example__subtitle {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
 .example__description {
   margin: 0;
 }
 
 .example__facts {
+  box-sizing: border-box;
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  margin: 20px 0;
+}
+
+.example__scroll {
+  margin-top: 15px;
 }
 
 .facts__item {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0;
 }
 
 .facts__number {
@@ -101,15 +151,20 @@ h2, .example__title {
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
-  min-width: 124px;
+  min-width: 100%;
   min-height: 64px;
-  border: 1px solid black;
+  border: 1px solid #C4C4C4;
 }
 
 .facts__description {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 12px;
   line-height: 12px;
+  width: 87px;
+  text-align: center;
+  margin: 0;
+  margin-top: -18px;
+  background-color: #EAEAEA;
 }
 
 .features {
@@ -167,18 +222,60 @@ h2, .example__title {
 }
 
 .main-nav {
-  width: 24px;
-  height: 37px;
-  display: block;
+  position: relative;
 }
 
-.main-nav__toggle {
-  background-image: url("../img/toggler-mobile.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 25px;
-  height: 18px;
+.main-nav__menu {
+  position: absolute;
+  background-color: white;
+  width: 100%;
+  z-index: 2;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-bottom: 1px solid #E6E6E6;
+}
+
+.menu__item {
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  border-top: 1px solid #E6E6E6;
+}
+
+.page-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2f2f2;
+}
+
+.page-footer__logo {
   display: block;
+  text-align: center;
+  width: 100%;
+  padding-top: 40px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.page-footer__socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 33px;
+  padding: 20px;
 }
 
 .page-header {
@@ -201,10 +298,52 @@ h2, .example__title {
   align-items: center;
 }
 
-.page-header__nav {
-  display: block;
+.page-header__toggle {
   display: flex;
   align-items: center;
+  width: 24px;
+  height: 37px;
+  margin-top: 8px;
+}
+
+.page-header__toggle--closed {
+  background-image: url("../img/toggler-mobile.png");
+  background-repeat: no-repeat;
+  width: 25px;
+  height: 18px;
+}
+
+.partnership {
+  display: block;
+  padding-top: 26px;
+}
+
+.partnership__text-block {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-bottom: 26px;
+}
+
+h2, .partnership__title {
+  display: block;
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+}
+
+.partnership__address {
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+
+.partnership__map {
+  display: block;
+  background-image: url("/../img/location.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 362px;
+  width: 100%;
 }
 
 .programs {
@@ -260,6 +399,8 @@ h2, .example__title {
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
+  text-decoration: none;
+  color: black;
 }
 
 .programs__link::after {
@@ -280,8 +421,7 @@ h3, .programs__title {
   display: flex;
   flex-direction: column;
   color: white;
-  background-blend-mode: multiply;
-  background-image: url("/../img/index-background.png");
+  background-image: url("/../img/background-cat.png");
   background-position: top;
   background-repeat: no-repeat;
   position: relative;
@@ -312,11 +452,19 @@ h3, .programs__title {
 
 .promo__description {
   display: block;
+  text-transform: uppercase;
   font-size: 14px;
   line-height: 14px;
   z-index: 2;
   text-align: center;
   margin-bottom: 30px;
+}
+
+.socails__link {
+  display: block;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
 }
 
 .container {
