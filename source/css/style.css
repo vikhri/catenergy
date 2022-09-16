@@ -15,6 +15,13 @@
 .section-title {
   font-family: "Oswald", sans-serif;
   font-weight: 400;
+  font-size: 36px;
+}
+
+.description {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
 }
 
 .section-strong-text {
@@ -58,6 +65,97 @@
   display: block;
   box-sizing: border-box;
   text-align: center;
+}
+
+.example {
+  background-color: #EAEAEA;
+  padding-top: 25px;
+}
+
+h2, .example__title {
+  display: block;
+  margin: 0;
+  padding-bottom: 40px;
+}
+
+.example__description {
+  margin: 0;
+}
+
+.example__facts {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.facts__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.facts__number {
+  box-sizing: border-box;
+  text-align: center;
+  padding-top: 14px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  min-width: 124px;
+  min-height: 64px;
+  border: 1px solid black;
+}
+
+.facts__description {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.features {
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+
+.features__title {
+  line-height: 40px;
+  padding-bottom: 40px;
+}
+
+.features-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.features__item {
+  margin-bottom: 20px;
+  padding-left: 80px;
+  height: 60px;
+}
+
+.features__item--1 {
+  background-image: url("/../img/feature-item-1.png");
+  position: left bottom;
+  background-repeat: no-repeat;
+}
+
+.features__item--2 {
+  background-image: url("/../img/feature-item-2.png");
+  position: left bottom;
+  background-repeat: no-repeat;
+}
+
+.features__item--3 {
+  background-image: url("/../img/feature-item-3.png");
+  position: left bottom;
+  background-repeat: no-repeat;
+}
+
+.features__item--4 {
+  background-image: url("/../img/feature-item-4.png");
+  position: left bottom;
+  background-repeat: no-repeat;
 }
 
 .logo__cat {
@@ -152,10 +250,6 @@
 
 .programs__description {
   display: block;
-  font-family: "Arial", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
   padding-bottom: 23px;
   border-bottom: 1px solid #D9D9D9;
 }

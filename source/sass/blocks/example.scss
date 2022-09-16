@@ -1,0 +1,21 @@
+.example {
+    background-color: #EAEAEA;
+    padding-top: 25px;
+}
+
+h2, .example__title {
+    display: block;
+    margin: 0;
+    padding-bottom: 40px;
+
+}
+
+.example__description {
+    margin: 0;
+}
+
+.example__facts {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+

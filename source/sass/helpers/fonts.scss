@@ -22,11 +22,18 @@
 }
 
 
+
 .section-title {
 
     @include main-font();
     font-weight: 400;
-    
+    font-size: 36px;
+}
+
+.description {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
 }
 
 .section-strong-text {
