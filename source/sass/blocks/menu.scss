@@ -1,3 +1,6 @@
+$tablet-width: 768px;
+$basic-green: #68B738;
+
 @mixin menu-font {
     font-family: 'Oswald', sans-serif;
     font-weight: 500;
@@ -14,6 +17,17 @@
     padding: 0;
     margin: 0;
     border-bottom: 1px solid #E6E6E6;
+
+    @media (min-width: $tablet-width) {
+        display: flex;
+        flex-direction: row;
+        border: none;
+        flex-wrap: wrap;
+        gap: 35px;
+        align-items: center;
+        
+    }
+
 }
 
 .menu__item {
@@ -21,7 +35,22 @@
     padding-top: 22px;
     padding-bottom: 22px;
     border-top: 1px solid #E6E6E6;
+
+    @media (min-width: $tablet-width) {
+        border: 0;
+        padding-top: auto;
+        padding-bottom: auto;
+        font-size: 18px;
+        line-height: 18px;
+    }
     
 }
 
+.menu__item {
+    padding-bottom: 10px;
+}
 
+.menu__link--current {
+    border-bottom: 2px solid $basic-green;
+    padding-bottom: 10px;
+}

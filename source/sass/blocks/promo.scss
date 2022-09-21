@@ -1,9 +1,14 @@
 $basic-green: #68B738;
+$tablet-width: 768px;
 
 @mixin background-image-promo {
     background-image: url("/../img/background-cat.png");
     background-position: top;
     background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+        background-image: none;
+    }
     
 }
 
@@ -15,6 +20,11 @@ $basic-green: #68B738;
     @include background-image-promo();
     position: relative;
     
+    @media (min-width: $tablet-width) {
+        background-color: white;
+        color: black;
+        height: 830px;
+    }
 }
 
 
@@ -22,16 +32,17 @@ $basic-green: #68B738;
     position: relative;
 }
 
-  .promo__front-image::before {
-    content: '';
+@media (min-width: $tablet-width) {
+
+    .promo__front-image {
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
+    width: 708px;
+    height: 609px;
     bottom: 0;
-    background-color:rgba(104, 183, 56, 0.85);  
     z-index: 1;
-  }
+}
+}
+
 
 .promo__title {
     display: block;
@@ -39,6 +50,14 @@ $basic-green: #68B738;
     line-height: 36px;
     z-index: 2;
     text-align: center;
+
+    @media (min-width: $tablet-width) {
+        text-align: start;
+        font-size: 60px;
+        line-height: 60px;
+        max-width: 414px;
+    }
+
 }
 
 .promo__description {
@@ -49,5 +68,26 @@ $basic-green: #68B738;
     z-index: 2;
     text-align: center;
     margin-bottom: 30px;
+
+    @media (min-width: $tablet-width) {
+        text-align: start;
+        font-size: 20px;
+        line-height: 20px;
+    }    
+
+}
+
+.promo__button {
+    position: relative;
+    z-index: 2;
+}
+
+@media (min-width: $tablet-width) {
+.promo__button {
+    width: 244px;
+    height: 54px;
+    z-index: 2;
+    font-size: 20px;
+}
 }
 
