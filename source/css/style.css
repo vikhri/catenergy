@@ -17,12 +17,22 @@
   font-weight: 400;
   font-size: 36px;
 }
+@media (min-width: 768px) {
+  .section-title {
+    font-size: 60px;
+  }
+}
 
 .description {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
   line-height: 18px;
   color: #444444;
+}
+@media (min-width: 768px) {
+  .description {
+    font-size: 16px;
+  }
 }
 
 .section-strong-text {
@@ -109,20 +119,48 @@
   padding-top: 25px;
   padding-bottom: 40px;
 }
+@media (min-width: 768px) {
+  .example {
+    background-color: white;
+    border-top: 1px solid #EAEAEA;
+    padding-bottom: 50px;
+  }
+}
 
 h2, .example__title {
   display: block;
   margin: 0;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
 }
 
 .example__subtitle {
   text-align: center;
   margin-bottom: 40px;
 }
+@media (min-width: 768px) {
+  .example__subtitle {
+    text-align: right;
+    width: 180px;
+    margin-bottom: 0;
+    margin-top: 30px;
+  }
+}
 
 .example__description {
   margin: 0;
+}
+@media (min-width: 768px) {
+  .example__description {
+    margin-bottom: 54px;
+  }
+}
+
+@media (min-width: 768px) {
+  .example__info {
+    display: grid;
+    grid-template-columns: 350px 200px;
+    justify-content: space-between;
+  }
 }
 
 .example__facts {
@@ -133,10 +171,14 @@ h2, .example__title {
   margin: 20px 0;
 }
 
+.example__image-block {
+  display: flex;
+  justify-content: center;
+}
+
 .example__scroll {
   margin-top: 15px;
 }
-
 .facts__item {
   display: flex;
   flex-direction: column;
@@ -172,10 +214,20 @@ h2, .example__title {
   padding-top: 20px;
   padding-bottom: 50px;
 }
+@media (min-width: 768px) {
+  .features {
+    padding-top: 45px;
+  }
+}
 
 .features__title {
   line-height: 40px;
   padding-bottom: 40px;
+}
+@media (min-width: 768px) {
+  .features__title {
+    padding-bottom: 72px;
+  }
 }
 
 .features-list {
@@ -183,11 +235,29 @@ h2, .example__title {
   margin: 0;
   padding: 0;
 }
+@media (min-width: 768px) {
+  .features-list {
+    display: grid;
+    grid-template-columns: 250px 250px;
+    justify-content: space-between;
+  }
+}
 
 .features__item {
   margin-bottom: 20px;
   padding-left: 80px;
-  height: 60px;
+  min-height: 60px;
+  position: relative;
+  box-sizing: border-box;
+  z-index: 1;
+}
+@media (min-width: 768px) {
+  .features__item {
+    min-height: 280px;
+    padding-top: 120px;
+    padding-left: 0;
+    font-size: 16px;
+  }
 }
 
 .features__item--1 {
@@ -195,11 +265,21 @@ h2, .example__title {
   position: left bottom;
   background-repeat: no-repeat;
 }
+@media (min-width: 768px) {
+  .features__item--1 {
+    background-image: url("/../img/feature-item-1-tablet.png");
+  }
+}
 
 .features__item--2 {
   background-image: url("/../img/feature-item-2.png");
   position: left bottom;
   background-repeat: no-repeat;
+}
+@media (min-width: 768px) {
+  .features__item--2 {
+    background-image: url("/../img/feature-item-2-tablet.png");
+  }
 }
 
 .features__item--3 {
@@ -207,13 +287,56 @@ h2, .example__title {
   position: left bottom;
   background-repeat: no-repeat;
 }
+@media (min-width: 768px) {
+  .features__item--3 {
+    background-image: url("/../img/feature-item-3-tablet.png");
+  }
+}
 
 .features__item--4 {
   background-image: url("/../img/feature-item-4.png");
   position: left bottom;
   background-repeat: no-repeat;
 }
+@media (min-width: 768px) {
+  .features__item--4 {
+    background-image: url("/../img/feature-item-4-tablet.png");
+  }
+}
 
+@media (min-width: 768px) {
+  .features__item--1::after {
+    content: url("/../img/1.png");
+    position: absolute;
+    top: 0;
+    right: 40px;
+    z-index: -1;
+  }
+
+  .features__item--2::after {
+    content: url("/../img/2.png");
+    position: absolute;
+    top: 0;
+    right: 5px;
+    z-index: -1;
+  }
+
+  .features__item--3::after {
+    content: url("/../img/3.png");
+    position: absolute;
+    top: 0;
+    right: 5px;
+    z-index: -1;
+  }
+
+  .features__item--4::after {
+    content: url("/../img/4.png");
+    position: absolute;
+    top: 0;
+    right: 5px;
+    z-index: -1;
+  }
+}
 .logo__cat {
   margin: 0 auto 0 0;
 }
@@ -277,11 +400,12 @@ h2, .example__title {
   padding-bottom: 10px;
 }
 
-.menu__link--current {
-  border-bottom: 2px solid #68B738;
-  padding-bottom: 10px;
+@media (min-width: 768px) {
+  .menu__link--current {
+    border-bottom: 2px solid #68B738;
+    padding-bottom: 10px;
+  }
 }
-
 .page-footer {
   display: flex;
   flex-direction: column;
@@ -415,6 +539,13 @@ h2, .partnership__title {
   padding-right: 30px;
   margin-top: 20px;
 }
+@media (min-width: 768px) {
+  .programs__item {
+    display: flex;
+    flex-direction: column;
+    padding: 77px 53px 53px;
+  }
+}
 
 .programs__title {
   display: block;
@@ -426,12 +557,26 @@ h2, .partnership__title {
   padding-top: 10px;
   padding-bottom: 10px;
 }
+@media (min-width: 768px) {
+  .programs__title {
+    padding-left: 0;
+    font-size: 36px;
+  }
+}
 
 .programs__title--slim::after {
   content: url("/../img/cat_back.png");
   position: absolute;
   left: 20px;
   top: 25px;
+}
+@media (min-width: 768px) {
+  .programs__title--slim::after {
+    content: url("/../img/cat_back_slim_tablet.png");
+    position: absolute;
+    left: 450px;
+    top: 92px;
+  }
 }
 
 .programs__title--pro::after {
@@ -440,11 +585,28 @@ h2, .partnership__title {
   left: 10px;
   top: 25px;
 }
+@media (min-width: 768px) {
+  .programs__title--pro::after {
+    content: url("/../img/cat_back_pro_tablet.png");
+    position: absolute;
+    left: 410px;
+    top: 92px;
+  }
+}
 
 .programs__description {
   display: block;
   padding-bottom: 23px;
   border-bottom: 1px solid #D9D9D9;
+}
+@media (min-width: 768px) {
+  .programs__description {
+    border-bottom: none;
+    width: 340px;
+    font-size: 16px;
+    padding-bottom: 48px;
+    padding-top: 24px;
+  }
 }
 
 .programs__link {
@@ -454,7 +616,13 @@ h2, .partnership__title {
   font-size: 16px;
   line-height: 16px;
   text-decoration: none;
+  text-transform: uppercase;
   color: black;
+}
+@media (min-width: 768px) {
+  .programs__link {
+    font-size: 20px;
+  }
 }
 
 .programs__link::after {
@@ -462,6 +630,12 @@ h2, .partnership__title {
   position: absolute;
   left: 110px;
   bottom: 16px;
+}
+@media (min-width: 768px) {
+  .programs__link::after {
+    left: 190px;
+    bottom: 71px;
+  }
 }
 
 h3, .programs__title {

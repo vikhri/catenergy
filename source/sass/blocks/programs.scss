@@ -1,4 +1,5 @@
 $basic-grey: #F2F2F2;
+$tablet-width: 768px;
 
 .programs {
     display: flex;
@@ -14,7 +15,13 @@ $basic-grey: #F2F2F2;
     padding-top: 20px;
     padding-right: 30px;
     margin-top: 20px;
-    
+
+    @media (min-width: $tablet-width) {
+        display: flex;
+        flex-direction: column;
+        padding: 77px 53px 53px;
+    }  
+ 
 }
 
 .programs__title {
@@ -26,18 +33,36 @@ $basic-grey: #F2F2F2;
     padding-left: 70px;
     padding-top: 10px;
     padding-bottom: 10px;
+
+    @media (min-width: $tablet-width) {
+        padding-left: 0;
+        font-size: 36px;
+    }    
 }
 
 .programs__title--slim::after {
     content: url("/../img/cat_back.png");
     position: absolute;
     left: 20px; top: 25px; 
+
+    @media (min-width: $tablet-width) {
+        content: url("/../img/cat_back_slim_tablet.png");
+        position: absolute;
+        left: 450px; top: 92px;
+    }  
+
 }
 
 .programs__title--pro::after {
     content: url("/../img/cat_back_pro.png");
     position: absolute;
     left: 10px; top: 25px; 
+
+    @media (min-width: $tablet-width) {
+        content: url("/../img/cat_back_pro_tablet.png");
+        position: absolute;
+        left: 410px; top: 92px; 
+    }  
 }
 
 
@@ -45,6 +70,15 @@ $basic-grey: #F2F2F2;
     display: block;
     padding-bottom: 23px;
     border-bottom: 1px solid #D9D9D9;
+
+    @media (min-width: $tablet-width) {
+    border-bottom: none;
+    width: 340px;
+    font-size: 16px;
+    padding-bottom: 48px;
+    padding-top: 24px;
+    }  
+
 }
 
 
@@ -55,13 +89,25 @@ $basic-grey: #F2F2F2;
     font-size: 16px;
     line-height: 16px;
     text-decoration: none;
+    text-transform: uppercase;
     color: black;
+
+    @media (min-width: $tablet-width) {
+        font-size: 20px;
+        }  
+    
+
 }
 
 .programs__link::after {
     content: url("/../img/icon_arrow.png");
     position: absolute;
     left: 110px; bottom: 16px; 
+
+    @media (min-width: $tablet-width) {
+        left: 190px; bottom: 71px; 
+        }  
+
 
 }
 

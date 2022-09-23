@@ -50,7 +50,9 @@ $basic-green: #68B738;
     padding-bottom: 10px;
 }
 
+@media (min-width: $tablet-width) {
 .menu__link--current {
     border-bottom: 2px solid $basic-green;
     padding-bottom: 10px;
+}
 }
