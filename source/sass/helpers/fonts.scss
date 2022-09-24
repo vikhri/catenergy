@@ -62,5 +62,10 @@ $tablet-width: 768px;
     size: 14px;
     line-height: 20px;
 
+    @media (min-width: $tablet-width) {
+        font-size: 20px;
+        line-height: 30px;
+        } 
+
 }
 

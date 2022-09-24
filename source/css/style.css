@@ -49,6 +49,12 @@
   size: 14px;
   line-height: 20px;
 }
+@media (min-width: 768px) {
+  .inner-title {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
 
 .button--reset {
   border: none;
@@ -91,10 +97,12 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
   gap: 13px;
 }
 
 .cat-scroll__bar {
+  position: relative;
   display: flex;
   background-color: white;
   width: 85px;
@@ -105,6 +113,15 @@
   padding-left: 4px;
   padding-right: 4px;
 }
+@media (min-width: 768px) {
+  .cat-scroll__bar {
+    width: 426px;
+    height: 6px;
+    border-radius: 6px;
+    border: none;
+    background-color: #DCDCDC;
+  }
+}
 
 .cat-scroll__value {
   display: block;
@@ -113,11 +130,26 @@
   width: 50%;
   height: 6px;
 }
+@media (min-width: 768px) {
+  .cat-scroll__value {
+    position: absolute;
+    left: 170px;
+    width: 8px;
+    height: 8px;
+    background: #68B738;
+    border-radius: 50%;
+    border: 14px solid white;
+    outline: 1px solid #CDCDCD;
+    cursor: pointer;
+  }
+}
 
 .example {
+  position: relative;
   background-color: #EAEAEA;
   padding-top: 25px;
   padding-bottom: 40px;
+  z-index: 2;
 }
 @media (min-width: 768px) {
   .example {
@@ -127,6 +159,17 @@
   }
 }
 
+@media (min-width: 768px) {
+  .example::after {
+    content: url("");
+    position: absolute;
+    height: 462px;
+    width: 100%;
+    bottom: 0px;
+    background-color: #e4e4e4;
+    z-index: -1;
+  }
+}
 h2, .example__title {
   display: block;
   margin: 0;
@@ -174,6 +217,13 @@ h2, .example__title {
 .example__image-block {
   display: flex;
   justify-content: center;
+  margin-top: 72px;
+  margin-bottom: 25px;
+}
+@media (min-width: 768px) {
+  .example__image-block {
+    min-height: 480px;
+  }
 }
 
 .example__scroll {
@@ -198,16 +248,33 @@ h2, .example__title {
   min-height: 64px;
   border: 1px solid #C4C4C4;
 }
+@media (min-width: 768px) {
+  .facts__number {
+    font-size: 30px;
+    line-height: 37px;
+  }
+}
 
 .facts__description {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 12px;
   line-height: 12px;
-  width: 87px;
+  width: 80px;
   text-align: center;
   margin: 0;
   margin-top: -18px;
   background-color: #EAEAEA;
+}
+@media (min-width: 768px) {
+  .facts__description {
+    display: block;
+    padding: 5px;
+    background-color: white;
+    width: auto;
+    font-size: 14px;
+    line-height: 14px;
+    margin-top: -13px;
+  }
 }
 
 .features {

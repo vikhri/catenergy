@@ -1,11 +1,16 @@
+$tablet-width: 768px;
+
 .cat-scroll {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
     gap: 13px;
+
 }
 
 .cat-scroll__bar {
+    position: relative;
     display: flex;
     background-color: white;
     width: 85px;
@@ -15,7 +20,16 @@
     align-items: center;
     padding-left: 4px;
     padding-right: 4px;    
+
+    @media (min-width: $tablet-width) {
+        width: 426px;
+        height: 6px;
+        border-radius: 6px;
+        border: none;
+        background-color: #DCDCDC;
+        } 
 }
+
 
 .cat-scroll__value {
     display: block;
@@ -23,5 +37,17 @@
     border-radius: 6px;
     width: 50%;
     height: 6px;
+
+    @media (min-width: $tablet-width) {
+        position: absolute;
+        left: 170px;
+        width: 8px;
+        height: 8px;
+        background: #68B738;
+        border-radius: 50%;
+        border: 14px solid white;
+        outline: 1px solid #CDCDCD;
+        cursor: pointer;
+    }
 
 }
