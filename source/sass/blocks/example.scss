@@ -1,9 +1,5 @@
 $tablet-width: 768px;
-
-@media (min-width: $tablet-width) {
-    
-    }  
-
+$desktop-width: 1440px;
 
 .example {
     position: relative;
@@ -16,10 +12,27 @@ $tablet-width: 768px;
     background-color: white;
     border-top: 1px solid #EAEAEA;
     padding-bottom: 50px;
-    }  
+        }  
+    
+    @media (min-width: $desktop-width) {
+    border-top: none;
+    padding-bottom: 0;
+    padding-top: 0;
+    }
+}
 
+@media (min-width: $desktop-width) {
+.example__content {
+    height: 640px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 
 }
+}
+
+
+
 
 @media (min-width: $tablet-width) {
     .example::after {
@@ -34,11 +47,28 @@ $tablet-width: 768px;
     }
 }
 
+@media (min-width: $desktop-width) {
+    .example::after {
+        content: url("");
+        position: absolute;
+        width: 100%;
+        bottom: 0px;
+        background-color: #eaeaea;
+        z-index: -1;
+     
+    }
+}
+
 
 h2, .example__title {
     display: block;
     margin: 0;
-    padding-bottom: 20px;
+    margin-bottom: 20px;
+
+    @media (min-width: $desktop-width) {
+        margin-top: 25px;
+    }
+
 
 }
 
@@ -46,12 +76,17 @@ h2, .example__title {
     text-align: center;
     margin-bottom: 40px;
 
-    @media (min-width: $tablet-width) {
+    @media (min-width: $tablet-width)  and (max-width: $desktop-width) {
         text-align: right;
         width: 180px;
         margin-bottom: 0;
         margin-top: 30px;
        } 
+
+    @media (min-width: $desktop-width)   {
+        text-align: left;
+        margin-bottom: 0;
+    } 
 }
 
 
@@ -62,10 +97,15 @@ h2, .example__title {
     @media (min-width: $tablet-width) {
          margin-bottom: 54px;
         } 
+    @media (min-width: $desktop-width)    {
+        max-width: 436px;
+        margin-top: 146px;
+        margin-bottom: 69px;
+    }
 }
 
 .example__info {
-    @media (min-width: $tablet-width) {
+    @media (min-width: $tablet-width) and (max-width: $desktop-width) {
         display: grid;
         grid-template-columns: 350px 200px;
         justify-content: space-between;
@@ -79,6 +119,12 @@ h2, .example__title {
     grid-template-columns: 1fr 1fr;
     gap: 32px;
     margin: 20px 0;
+
+    @media (min-width: $desktop-width)    {
+        max-width: 436px;
+        margin-top: 0px;
+        margin-bottom: 55px;
+    }
    
 }
 
@@ -92,6 +138,12 @@ h2, .example__title {
       min-height: 480px;
     }
 
+    @media (min-width: $desktop-width) {
+        max-height: 511px;
+        margin: 0;
+        margin-bottom: 25px;
+      }
+
 }
 
 
@@ -104,3 +156,15 @@ h2, .example__title {
 
 }
 
+
+.example__image-slim--tablet {
+    @media (max-width: $tablet-width){
+    display: none;
+    }
+}
+
+.example__image-fat, .example__image-slim {
+    @media (min-width: $tablet-width){
+        display: none;
+        }
+}

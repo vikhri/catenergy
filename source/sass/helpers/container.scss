@@ -1,4 +1,5 @@
 $tablet-width:768px;
+$desktop-width:1440px;
 
 .container {
     width: 280px;
@@ -8,4 +9,12 @@ $tablet-width:768px;
         width: 708px;
         margin: 0 auto;
     }
+
+    @media (min-width: $desktop-width) {
+        width: 1220px;
+        margin: 0 auto;
+    }
 }
+
+
+

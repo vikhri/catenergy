@@ -1,4 +1,5 @@
 $tablet-width: 768px;
+$desktop-width: 1440px;
 
 .facts__item {
     display: flex;
@@ -46,4 +47,7 @@ $tablet-width: 768px;
         margin-top: -13px;
         }  
 
+    @media (min-width: $desktop-width)    {
+        background-color: #EAEAEA;
+    }
 }
