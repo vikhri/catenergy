@@ -1,3 +1,6 @@
+$tablet-width: 768px;
+$desktop-width: 1440px;
+
 .main-nav {
     position: relative;
 }
@@ -7,5 +10,10 @@
     background-color: white;
     width: 100%;
     z-index: 2;
+
+@media (min-width: $desktop-width) {
+    background-color: transparent;
+    color: white;
+}
 
 }

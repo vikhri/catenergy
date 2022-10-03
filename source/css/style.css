@@ -372,6 +372,11 @@ h2, .example__title {
     padding-bottom: 72px;
   }
 }
+@media (min-width: 1440px) {
+  .features__title {
+    padding-top: 70px;
+  }
+}
 
 .features-list {
   list-style: none;
@@ -382,6 +387,13 @@ h2, .example__title {
   .features-list {
     display: grid;
     grid-template-columns: 250px 250px;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 1440px) {
+  .features-list {
+    display: grid;
+    grid-template-columns: 250px 250px 250px 250px;
     justify-content: space-between;
   }
 }
@@ -498,6 +510,12 @@ h2, .example__title {
   width: 100%;
   z-index: 2;
 }
+@media (min-width: 1440px) {
+  .main-nav__menu {
+    background-color: transparent;
+    color: white;
+  }
+}
 
 .menu {
   display: flex;
@@ -546,6 +564,12 @@ h2, .example__title {
 @media (min-width: 768px) {
   .menu__link--current {
     border-bottom: 2px solid #68B738;
+    padding-bottom: 10px;
+  }
+}
+@media (min-width: 1440px) {
+  .menu__link--current {
+    border-bottom: 2px solid white;
     padding-bottom: 10px;
   }
 }
@@ -612,6 +636,16 @@ h2, .example__title {
     width: 708px;
   }
 }
+@media (min-width: 1440px) {
+  .page-header {
+    grid-template-columns: 210px 500px;
+    justify-content: space-between;
+    width: 100%;
+    padding-left: 110px;
+    padding-right: 110px;
+    box-sizing: border-box;
+  }
+}
 
 .page-header__logo-block {
   display: flex;
@@ -629,6 +663,7 @@ h2, .example__title {
     justify-content: flex-start;
     gap: 12px;
     padding: 0;
+    z-index: 5;
   }
 }
 
@@ -758,6 +793,13 @@ h2, .partnership__title {
   display: flex;
   flex-direction: column;
 }
+@media (min-width: 1440px) {
+  .programs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+  }
+}
 
 .programs__item {
   display: block;
@@ -793,6 +835,11 @@ h2, .partnership__title {
     font-size: 36px;
   }
 }
+@media (min-width: 1440px) {
+  .programs__title {
+    padding-left: 162px;
+  }
+}
 
 .programs__title--slim::after {
   content: url("/../img/cat_back.png");
@@ -806,6 +853,14 @@ h2, .partnership__title {
     position: absolute;
     left: 450px;
     top: 92px;
+  }
+}
+@media (min-width: 1440px) {
+  .programs__title--slim::after {
+    content: url("/../img/cat_slim-desktop.png");
+    position: absolute;
+    left: 50px;
+    top: 42px;
   }
 }
 
@@ -823,6 +878,14 @@ h2, .partnership__title {
     top: 92px;
   }
 }
+@media (min-width: 1440px) {
+  .programs__title--pro::after {
+    content: url("/../img/cat-pro-desktop.png");
+    position: absolute;
+    left: 32px;
+    top: 42px;
+  }
+}
 
 .programs__description {
   display: block;
@@ -836,6 +899,12 @@ h2, .partnership__title {
     font-size: 16px;
     padding-bottom: 48px;
     padding-top: 24px;
+  }
+}
+@media (min-width: 1440px) {
+  .programs__description {
+    width: auto;
+    padding-bottom: 23px;
   }
 }
 
@@ -889,6 +958,14 @@ h3, .programs__title {
     background-image: none;
   }
 }
+@media (min-width: 1440px) {
+  .promo {
+    background-image: url("/../img/background-cat-desktop.png");
+    background-position: right;
+    background-repeat: no-repeat;
+    margin-top: -190px;
+  }
+}
 @media (min-width: 768px) {
   .promo {
     background-color: white;
@@ -901,13 +978,46 @@ h3, .programs__title {
   position: relative;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
+  .promo__front-image--tablet {
+    display: none;
+  }
+
+  .promo__front-image--desktop {
+    display: none;
+  }
+}
+@media (min-width: 768px) and (max-width: 1440px) {
   .promo__front-image {
     position: absolute;
     width: 708px;
     height: 609px;
     bottom: 0;
     z-index: 1;
+  }
+
+  .promo__front-image--desktop {
+    display: none;
+  }
+
+  .promo__front-image--mobile {
+    display: none;
+  }
+}
+@media (min-width: 1440px) {
+  .promo__front-image {
+    position: absolute;
+    bottom: 150px;
+    left: 38%;
+    z-index: 1;
+  }
+
+  .promo__front-image--tablet {
+    display: none;
+  }
+
+  .promo__front-image--mobile {
+    display: none;
   }
 }
 .promo__title {
@@ -923,6 +1033,11 @@ h3, .programs__title {
     font-size: 60px;
     line-height: 60px;
     max-width: 414px;
+  }
+}
+@media (min-width: 1440px) {
+  .promo__title {
+    margin-top: 223px;
   }
 }
 
@@ -942,6 +1057,11 @@ h3, .programs__title {
     line-height: 20px;
   }
 }
+@media (min-width: 768px) {
+  .promo__description {
+    margin-bottom: 52px;
+  }
+}
 
 .promo__button {
   position: relative;
@@ -954,6 +1074,11 @@ h3, .programs__title {
     height: 54px;
     z-index: 2;
     font-size: 20px;
+  }
+}
+@media (min-width: 1440px) {
+  .promo-container {
+    padding-left: 150px;
   }
 }
 .socails__link {

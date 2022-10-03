@@ -1,4 +1,5 @@
 $tablet-width: 768px;
+$desktop-width: 1440px;
 $basic-green: #68B738;
 
 @mixin menu-font {
@@ -56,3 +57,10 @@ $basic-green: #68B738;
     padding-bottom: 10px;
 }
 }
+
+@media (min-width: $desktop-width) {
+    .menu__link--current {
+        border-bottom: 2px solid white;
+        padding-bottom: 10px;
+    }
+    }
