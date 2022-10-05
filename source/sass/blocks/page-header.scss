@@ -32,6 +32,7 @@ $desktop-width: 1440px;
     padding-right: 20px;
     justify-content: space-between;
     align-items: center;
+    position: relative;
     
     @media (min-width: $tablet-width) {
     
@@ -77,9 +78,28 @@ $desktop-width: 1440px;
 
 
 .page-header__toggle--closed {
-    background-image: url("../img/toggler-mobile.png");
     background-repeat: no-repeat;
     width: 25px;
     height: 18px;
 
 }
+
+
+.page-header__toggle--closed::after {
+    content: "";
+    position: relative;
+    bottom: 10px;
+    right: 0;
+    width: 36px;
+    height: 2px;
+    background-color: #000000;
+    box-shadow: 0 8px 0 0 #000, 0 16px 0 0 #000;
+    z-index: 4;
+  }
+  
+//   .main-nav--closed .main-nav__toggle:active::before {
+//     background-color: fade(#ffffff, 30%);
+//     box-shadow:
+//       0 8px 0 0 fade(#ffffff, 30%),
+//       0 16px 0 0 fade(#ffffff, 30%);
+//   }
