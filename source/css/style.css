@@ -690,12 +690,6 @@ h2, .example__title {
   }
 }
 
-.page-header__toggle--closed {
-  background-repeat: no-repeat;
-  width: 25px;
-  height: 18px;
-}
-
 .page-header__toggle--closed::after {
   content: "";
   position: relative;
@@ -706,6 +700,28 @@ h2, .example__title {
   background-color: #000000;
   box-shadow: 0 8px 0 0 #000, 0 16px 0 0 #000;
   z-index: 4;
+}
+
+.page-header__toggle--opened {
+  top: 0;
+  right: 0;
+  left: auto;
+}
+.page-header__toggle--opened::before, .page-header__toggle--opened::after {
+  content: "";
+  position: absolute;
+  top: 34px;
+  right: 18px;
+  width: 32px;
+  height: 2px;
+  background-color: #000;
+}
+.page-header__toggle--opened::before {
+  transform: rotate(45deg);
+  box-shadow: none;
+}
+.page-header__toggle--opened::after {
+  transform: rotate(-45deg);
 }
 
 .partnership {
