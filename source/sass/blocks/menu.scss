@@ -31,6 +31,14 @@ $basic-green: #68B738;
 
 }
 
+.menu--hidden {
+    display: none;
+    @media (min-width: $tablet-width) {
+    display: flex;
+    }
+}
+
+
 .menu__item {
     @include menu-font();
     padding-top: 22px;
