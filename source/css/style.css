@@ -95,6 +95,15 @@
   text-align: center;
 }
 
+.button:hover {
+  background-color: #5EAA2F;
+}
+
+.button:active {
+  background-color: #5EAA2F;
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .cat-scroll {
   display: flex;
   flex-direction: row;
@@ -496,6 +505,16 @@ h2, .example__title {
   margin: 0 auto 0 0;
 }
 
+.logo__cat:hover path,
+.logo__text:hover path {
+  opacity: 80%;
+}
+
+.logo__cat:active path,
+.logo__text:active path {
+  opacity: 60%;
+}
+
 .logo__text {
   margin: 0 auto;
 }
@@ -570,14 +589,20 @@ h2, .example__title {
   padding-bottom: 10px;
 }
 
+.menu__link:hover {
+  opacity: 30%;
+}
+
 @media (min-width: 768px) {
-  .menu__link--current {
+  .menu__link:active {
+    opacity: 100%;
     border-bottom: 2px solid #68B738;
     padding-bottom: 10px;
   }
 }
 @media (min-width: 1440px) {
-  .menu__link--current {
+  .menu__link:active {
+    opacity: 100%;
     border-bottom: 2px solid white;
     padding-bottom: 10px;
   }
@@ -974,6 +999,10 @@ h2, .partnership__title {
   }
 }
 
+.programs__link:active {
+  opacity: 30%;
+}
+
 h3, .programs__title {
   -webkit-margin-before: 0;
           margin-block-start: 0;
@@ -1123,6 +1152,16 @@ h3, .programs__title {
   margin: 0;
   padding: 0;
   cursor: pointer;
+}
+
+.socails__link:hover path {
+  opacity: 70%;
+  fill: #68B738;
+}
+
+.socails__link:active path {
+  opacity: 300%;
+  fill: #68B738;
 }
 
 .container {

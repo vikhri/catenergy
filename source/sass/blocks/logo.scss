@@ -5,7 +5,20 @@ $tablet-width: 768px;
 
 }
 
+
+.logo__cat:hover path,
+.logo__text:hover path
+{
+ opacity: 80%;
+}
     
+.logo__cat:active path,
+.logo__text:active path
+{
+ opacity: 60%;
+}
+    
+
 
 .logo__text {
     margin: 0 auto;

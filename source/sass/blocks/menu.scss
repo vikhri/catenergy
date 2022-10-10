@@ -59,16 +59,25 @@ $basic-green: #68B738;
     padding-bottom: 10px;
 }
 
+.menu__link:hover {
+    opacity: 30%;
+}    
+
 @media (min-width: $tablet-width) {
-.menu__link--current {
+
+.menu__link:active {
+    opacity: 100%;
     border-bottom: 2px solid $basic-green;
     padding-bottom: 10px;
 }
+
 }
 
 @media (min-width: $desktop-width) {
-    .menu__link--current {
+    .menu__link:active {
+        opacity: 100%;
         border-bottom: 2px solid white;
         padding-bottom: 10px;
     }
     }
+

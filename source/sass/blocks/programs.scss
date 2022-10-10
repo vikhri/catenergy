@@ -124,7 +124,6 @@ $desktop-width: 1440px;
     @media (min-width: $tablet-width) {
         font-size: 20px;
         }  
-    
 
 }
 
@@ -139,6 +138,11 @@ $desktop-width: 1440px;
 
 
 }
+
+.programs__link:active {
+    opacity: 30%;
+}
+
 
 h3, .programs__title {
  margin-block-start: 0;

@@ -1,6 +1,19 @@
+$basic-green: #68B738;
+
 .socails__link {
     display: block;
     margin: 0;
     padding: 0;
     cursor: pointer;
+}
+
+.socails__link:hover path{
+    opacity: 70%;
+    fill: $basic-green;
+}
+
+.socails__link:active path {
+    opacity: 300%;
+    fill: $basic-green;
+
 }
