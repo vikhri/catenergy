@@ -41,16 +41,16 @@ $desktop-width: 1440px;
     position: relative;
 }
 
-@media (max-width: $tablet-width) {
+// @media (max-width: $tablet-width) {
 
-    .promo__front-image--tablet {
-    display: none;
-    }
+//     .promo__front-image--tablet {
+//     display: none;
+//     }
 
-    .promo__front-image--desktop {
-        display: none;
-        }
-}
+//     .promo__front-image--desktop {
+//         display: none;
+//         }
+// }
 
 @media (min-width: $tablet-width) and (max-width: $desktop-width) {
 
@@ -79,15 +79,18 @@ $desktop-width: 1440px;
     bottom: 150px;
     left: 38%;
     z-index: 1;
+    width: 552px;
+    height: 449px;
+
     }
  
-    .promo__front-image--tablet {
-        display: none;
-        }
+    // .promo__front-image--tablet {
+    //     display: none;
+    //     }
 
-    .promo__front-image--mobile {
-            display: none;
-            }    
+    // .promo__front-image--mobile {
+    //         display: none;
+    //         }    
 }
 
 

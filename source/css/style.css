@@ -1044,15 +1044,6 @@ h3, .programs__title {
   position: relative;
 }
 
-@media (max-width: 768px) {
-  .promo__front-image--tablet {
-    display: none;
-  }
-
-  .promo__front-image--desktop {
-    display: none;
-  }
-}
 @media (min-width: 768px) and (max-width: 1440px) {
   .promo__front-image {
     position: absolute;
@@ -1076,14 +1067,8 @@ h3, .programs__title {
     bottom: 150px;
     left: 38%;
     z-index: 1;
-  }
-
-  .promo__front-image--tablet {
-    display: none;
-  }
-
-  .promo__front-image--mobile {
-    display: none;
+    width: 552px;
+    height: 449px;
   }
 }
 .promo__title {
