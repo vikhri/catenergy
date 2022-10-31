@@ -14,10 +14,16 @@ $desktop-width: 1440px;
     @media (min-width: $desktop-width) {
 
     background-image: url("/../img/background-cat-desktop.png");
-    background-position: right;
+    background-position: 80%;
     background-repeat: no-repeat;
     margin-top: -190px;
     }
+
+    @media (min-width: 2000px) {
+        background-image: url("/../img/background-cat-desktop-wide.png");
+        background-position: 100%;
+    }
+    
     
 }
 

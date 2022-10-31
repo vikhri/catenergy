@@ -2,14 +2,14 @@
   font-family: "Oswald";
   font-style: normal;
   font-weight: 400;
-  src: url("/../fonts/oswaldregular.woff2") format("woff2"), url("/../fonts/oswaldregular.woff") format("woff");
+  src: url("./fonts/oswaldregular.woff2") format("woff2"), url("./fonts/oswaldregular.woff") format("woff");
   font-display: swap;
 }
 @font-face {
   font-family: "Oswald";
   font-style: normal;
   font-weight: 500;
-  src: url("/../fonts/oswaldregular.woff2") format("woff2"), url("/../fonts/oswaldregular.woff") format("woff");
+  src: url("./fonts/oswaldregular.woff2") format("woff2"), url("./fonts/oswaldregular.woff") format("woff");
   font-display: swap;
 }
 .section-title {
@@ -675,8 +675,6 @@ h2, .example__title {
     grid-template-columns: 210px 500px;
     justify-content: space-between;
     width: 100%;
-    padding-left: 110px;
-    padding-right: 110px;
     box-sizing: border-box;
   }
 }
@@ -1027,9 +1025,15 @@ h3, .programs__title {
 @media (min-width: 1440px) {
   .promo {
     background-image: url("/../img/background-cat-desktop.png");
-    background-position: right;
+    background-position: 80%;
     background-repeat: no-repeat;
     margin-top: -190px;
+  }
+}
+@media (min-width: 2000px) {
+  .promo {
+    background-image: url("/../img/background-cat-desktop-wide.png");
+    background-position: 100%;
   }
 }
 @media (min-width: 768px) {
@@ -1524,14 +1528,14 @@ template {
   font-family: "Oswald";
   font-style: normal;
   font-weight: 400;
-  src: url("/./fonts/fonts/oswaldregular.woff2") format("woff2"), url("/./fonts/fonts/oswaldregular.woff") format("woff");
+  src: url("/./fonts/oswaldregular.woff2") format("woff2"), url("/./fonts/oswaldregular.woff") format("woff");
   font-display: swap;
 }
 @font-face {
   font-family: "Oswald";
   font-style: normal;
   font-weight: 500;
-  src: url("/./fonts/fonts/oswaldregular.woff2") format("woff2"), url("/./fonts/fonts/oswaldregular.woff") format("woff");
+  src: url("/./fonts/oswaldregular.woff2") format("woff2"), url("/./fonts/oswaldregular.woff") format("woff");
   font-display: swap;
 }
 html {
