@@ -52,18 +52,18 @@ $desktop-width: 1440px;
 }
 
 .programs__title--slim::after {
-    content: url("/../img/cat_back.png");
+    content: url("../img/cat_back.png");
     position: absolute;
     left: 20px; top: 25px; 
 
     @media (min-width: $tablet-width) {
-        content: url("/../img/cat_back_slim_tablet.png");
+        content: url("../img/cat_back_slim_tablet.png");
         position: absolute;
         left: 450px; top: 92px;
     }  
 
     @media (min-width: $desktop-width) {
-        content: url("/../img/cat_slim-desktop.png");
+        content: url("../img/cat_slim-desktop.png");
         position: absolute;
         left: 50px; top: 42px;
     }  
@@ -71,18 +71,18 @@ $desktop-width: 1440px;
 }
 
 .programs__title--pro::after {
-    content: url("/../img/cat_back_pro.png");
+    content: url("../img/cat_back_pro.png");
     position: absolute;
     left: 10px; top: 25px; 
 
     @media (min-width: $tablet-width) {
-        content: url("/../img/cat_back_pro_tablet.png");
+        content: url("../img/cat_back_pro_tablet.png");
         position: absolute;
         left: 410px; top: 92px; 
     }
     
     @media (min-width: $desktop-width) {
-        content: url("/../img/cat-pro-desktop.png");
+        content: url("../img/cat-pro-desktop.png");
         position: absolute;
         left: 32px; top: 42px;
     }  
@@ -128,7 +128,7 @@ $desktop-width: 1440px;
 }
 
 .programs__link::after {
-    content: url("/../img/icon_arrow.png");
+    content: url("../img/icon_arrow.png");
     position: absolute;
     left: 110px; bottom: 16px; 
 

@@ -63,70 +63,70 @@ $desktop-width: 1440px;
 }
 
 .features__item--1 {
-    background-image: url("/../img/feature-item-1.png");
+    background-image: url("../img/feature-item-1.png");
     position: left bottom;
     background-repeat: no-repeat;
 
     @media (min-width: $tablet-width) {
-        background-image: url("/../img/feature-item-1-tablet.png")
+        background-image: url("../img/feature-item-1-tablet.png")
     }
 }
 
 
 .features__item--2 {
-    background-image: url("/../img/feature-item-2.png");
+    background-image: url("../img/feature-item-2.png");
     position: left bottom;
     background-repeat: no-repeat;
 
     @media (min-width: $tablet-width) {
-        background-image: url("/../img/feature-item-2-tablet.png")
+        background-image: url("../img/feature-item-2-tablet.png")
     }
 }
 
 .features__item--3 {
-    background-image: url("/../img/feature-item-3.png");
+    background-image: url("../img/feature-item-3.png");
     position: left bottom;
     background-repeat: no-repeat;
 
     @media (min-width: $tablet-width) {
-        background-image: url("/../img/feature-item-3-tablet.png")
+        background-image: url("../img/feature-item-3-tablet.png")
     }
 }
 
 .features__item--4 {
-    background-image: url("/../img/feature-item-4.png");
+    background-image: url("../img/feature-item-4.png");
     position: left bottom;
     background-repeat: no-repeat;
 
     @media (min-width: $tablet-width) {
-        background-image: url("/../img/feature-item-4-tablet.png")
+        background-image: url("../img/feature-item-4-tablet.png")
     }
 }
 
 @media (min-width: $tablet-width) {
     .features__item--1::after {
-        content: url("/../img/1.png");
+        content: url("../img/1.png");
         position: absolute;
         top: 0; right: 40px; 
         z-index: -1; 
     }
 
     .features__item--2::after {
-        content: url("/../img/2.png");
+        content: url("../img/2.png");
         position: absolute;
         top: 0; right: 5px; 
         z-index: -1; 
     }
 
     .features__item--3::after {
-        content: url("/../img/3.png");
+        content: url("../img/3.png");
         position: absolute;
         top: 0; right: 5px; 
         z-index: -1; 
     }
 
     .features__item--4::after {
-        content: url("/../img/4.png");
+        content: url("../img/4.png");
         position: absolute;
         top: 0; right: 5px; 
         z-index: -1; 

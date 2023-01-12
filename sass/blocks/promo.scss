@@ -3,7 +3,7 @@ $tablet-width: 768px;
 $desktop-width: 1440px;
 
 @mixin background-image-promo {
-    background-image: url("/../img/background-cat.png");
+    background-image: url("../img/background-cat.png");
     background-position: top;
     background-repeat: no-repeat;
 
@@ -13,14 +13,14 @@ $desktop-width: 1440px;
 
     @media (min-width: $desktop-width) {
 
-    background-image: url("/../img/background-cat-desktop.png");
+    background-image: url("../img/background-cat-desktop.png");
     background-position: 80%;
     background-repeat: no-repeat;
     margin-top: -190px;
     }
 
     @media (min-width: 2000px) {
-        background-image: url("/../img/background-cat-desktop-wide.png");
+        background-image: url("../img/background-cat-desktop-wide.png");
         background-position: 100%;
     }
     

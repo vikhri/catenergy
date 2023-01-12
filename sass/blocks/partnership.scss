@@ -73,20 +73,20 @@ h2, .partnership__title {
 
 .partnership__map {
     display: block;
-    background-image: url("/../img/location.png");
+    background-image: url("../img/location.png");
     background-size: cover;
     background-repeat: no-repeat;
     height: 362px;
     width: 100%;
 
     @media (min-width: $tablet-width) {
-        background-image: url("/../img/Map-tablet.png");
+        background-image: url("../img/Map-tablet.png");
         height: 400px;
         width: 100%;
     }
 
     @media (min-width: $tablet-width) {
-        background-image: url("/../img/Map-desktop.png");
+        background-image: url("../img/Map-desktop.png");
         height: 400px;
         width: 100%;
     }

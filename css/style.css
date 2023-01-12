@@ -2,14 +2,14 @@
   font-family: "Oswald";
   font-style: normal;
   font-weight: 400;
-  src: url("/../fonts/oswaldregular.woff2") format("woff2"), url("/../fonts/oswaldregular.woff") format("woff");
+  src: url("../fonts/oswaldregular.woff2") format("woff2"), url("../fonts/oswaldregular.woff") format("woff");
   font-display: swap;
 }
 @font-face {
   font-family: "Oswald";
   font-style: normal;
   font-weight: 500;
-  src: url("/../fonts/oswaldregular.woff2") format("woff2"), url("/../fonts/oswaldregular.woff") format("woff");
+  src: url("../fonts/oswaldregular.woff2") format("woff2"), url("../fonts/oswaldregular.woff") format("woff");
   font-display: swap;
 }
 .section-title {
@@ -425,73 +425,73 @@ h2, .example__title {
 }
 
 .features__item--1 {
-  background-image: url("/../img/feature-item-1.png");
+  background-image: url("../img/feature-item-1.png");
   position: left bottom;
   background-repeat: no-repeat;
 }
 @media (min-width: 768px) {
   .features__item--1 {
-    background-image: url("/../img/feature-item-1-tablet.png");
+    background-image: url("../img/feature-item-1-tablet.png");
   }
 }
 
 .features__item--2 {
-  background-image: url("/../img/feature-item-2.png");
+  background-image: url("../img/feature-item-2.png");
   position: left bottom;
   background-repeat: no-repeat;
 }
 @media (min-width: 768px) {
   .features__item--2 {
-    background-image: url("/../img/feature-item-2-tablet.png");
+    background-image: url("../img/feature-item-2-tablet.png");
   }
 }
 
 .features__item--3 {
-  background-image: url("/../img/feature-item-3.png");
+  background-image: url("../img/feature-item-3.png");
   position: left bottom;
   background-repeat: no-repeat;
 }
 @media (min-width: 768px) {
   .features__item--3 {
-    background-image: url("/../img/feature-item-3-tablet.png");
+    background-image: url("../img/feature-item-3-tablet.png");
   }
 }
 
 .features__item--4 {
-  background-image: url("/../img/feature-item-4.png");
+  background-image: url("../img/feature-item-4.png");
   position: left bottom;
   background-repeat: no-repeat;
 }
 @media (min-width: 768px) {
   .features__item--4 {
-    background-image: url("/../img/feature-item-4-tablet.png");
+    background-image: url("../img/feature-item-4-tablet.png");
   }
 }
 
 @media (min-width: 768px) {
   .features__item--1::after {
-    content: url("/../img/1.png");
+    content: url("../img/1.png");
     position: absolute;
     top: 0;
     right: 40px;
     z-index: -1;
   }
   .features__item--2::after {
-    content: url("/../img/2.png");
+    content: url("../img/2.png");
     position: absolute;
     top: 0;
     right: 5px;
     z-index: -1;
   }
   .features__item--3::after {
-    content: url("/../img/3.png");
+    content: url("../img/3.png");
     position: absolute;
     top: 0;
     right: 5px;
     z-index: -1;
   }
   .features__item--4::after {
-    content: url("/../img/4.png");
+    content: url("../img/4.png");
     position: absolute;
     top: 0;
     right: 5px;
@@ -825,7 +825,7 @@ h2, .partnership__title {
 
 .partnership__map {
   display: block;
-  background-image: url("/../img/location.png");
+  background-image: url("../img/location.png");
   background-size: cover;
   background-repeat: no-repeat;
   height: 362px;
@@ -833,14 +833,14 @@ h2, .partnership__title {
 }
 @media (min-width: 768px) {
   .partnership__map {
-    background-image: url("/../img/Map-tablet.png");
+    background-image: url("../img/Map-tablet.png");
     height: 400px;
     width: 100%;
   }
 }
 @media (min-width: 768px) {
   .partnership__map {
-    background-image: url("/../img/Map-desktop.png");
+    background-image: url("../img/Map-desktop.png");
     height: 400px;
     width: 100%;
   }
@@ -899,14 +899,14 @@ h2, .partnership__title {
 }
 
 .programs__title--slim::after {
-  content: url("/../img/cat_back.png");
+  content: url("../img/cat_back.png");
   position: absolute;
   left: 20px;
   top: 25px;
 }
 @media (min-width: 768px) {
   .programs__title--slim::after {
-    content: url("/../img/cat_back_slim_tablet.png");
+    content: url("../img/cat_back_slim_tablet.png");
     position: absolute;
     left: 450px;
     top: 92px;
@@ -914,7 +914,7 @@ h2, .partnership__title {
 }
 @media (min-width: 1440px) {
   .programs__title--slim::after {
-    content: url("/../img/cat_slim-desktop.png");
+    content: url("../img/cat_slim-desktop.png");
     position: absolute;
     left: 50px;
     top: 42px;
@@ -922,14 +922,14 @@ h2, .partnership__title {
 }
 
 .programs__title--pro::after {
-  content: url("/../img/cat_back_pro.png");
+  content: url("../img/cat_back_pro.png");
   position: absolute;
   left: 10px;
   top: 25px;
 }
 @media (min-width: 768px) {
   .programs__title--pro::after {
-    content: url("/../img/cat_back_pro_tablet.png");
+    content: url("../img/cat_back_pro_tablet.png");
     position: absolute;
     left: 410px;
     top: 92px;
@@ -937,7 +937,7 @@ h2, .partnership__title {
 }
 @media (min-width: 1440px) {
   .programs__title--pro::after {
-    content: url("/../img/cat-pro-desktop.png");
+    content: url("../img/cat-pro-desktop.png");
     position: absolute;
     left: 32px;
     top: 42px;
@@ -982,7 +982,7 @@ h2, .partnership__title {
 }
 
 .programs__link::after {
-  content: url("/../img/icon_arrow.png");
+  content: url("../img/icon_arrow.png");
   position: absolute;
   left: 110px;
   bottom: 16px;
@@ -1007,7 +1007,7 @@ h3, .programs__title {
   display: flex;
   flex-direction: column;
   color: white;
-  background-image: url("/../img/background-cat.png");
+  background-image: url("../img/background-cat.png");
   background-position: top;
   background-repeat: no-repeat;
   position: relative;
@@ -1019,7 +1019,7 @@ h3, .programs__title {
 }
 @media (min-width: 1440px) {
   .promo {
-    background-image: url("/../img/background-cat-desktop.png");
+    background-image: url("../img/background-cat-desktop.png");
     background-position: 80%;
     background-repeat: no-repeat;
     margin-top: -190px;
@@ -1027,7 +1027,7 @@ h3, .programs__title {
 }
 @media (min-width: 2000px) {
   .promo {
-    background-image: url("/../img/background-cat-desktop-wide.png");
+    background-image: url("../img/background-cat-desktop-wide.png");
     background-position: 100%;
   }
 }
